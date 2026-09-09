@@ -70,7 +70,7 @@ The business logic that the code implements.
 
 ## Before modifying/creating SPEC.md files [required]
 
-You must always read and respect https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/skills/sdd/SKILL.md
+You must always use the `sdd` skill — https://github.com/brillout/sdd
 ```
 
 Note:
@@ -105,7 +105,7 @@ The file structure often represents levels of abstraction => mirror it:
 
 When the user asks to install or set up SDD:
 1. Generate a `SPEC.md` file for each file and directory containing software source code
-2. Make sure `AGENTS.md` contains: "Before modifying/creating SPEC.md files, you must always read and respect https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/skills/sdd/SKILL.md"
+2. Make sure `AGENTS.md` contains: "Before modifying/creating SPEC.md files, you must always use the `sdd` skill — https://github.com/brillout/sdd"
 
 
 ## Maintain
