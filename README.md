@@ -15,12 +15,6 @@ Then tell AI:
 Install SDD
 ```
 
-> [!NOTE]
-> The `sdd` skill is an [Agent Skill](https://agentskills.io): it works with Claude Code, Cursor, Codex, Copilot, and [many other agents](https://github.com/vercel-labs/skills).
->
-> Agent without skill support? Tell AI: `Install https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/skills/sdd/SKILL.md`
-
-
 ## What does it do?
 
 - AI generates a `SPEC.md` for each source code file and directory:
@@ -28,10 +22,6 @@ Install SDD
   - `some-dir/` => `some-dir/SPEC.md`
   ```md
   Short description of the business logic this file/directory implements.
-
-  ## Context [optional]
-
-  ## Glossary [optional]
 
   ## Business logic — TL;DR
 
@@ -62,7 +52,7 @@ It enables you to:
 
 ## How does it work?
 
-Read the [`SKILL.md` file](./skills/sdd/SKILL.md) — it's small.
+Read [`SKILL.md`](./skills/sdd/SKILL.md) — it's small.
 
 
 ## See also

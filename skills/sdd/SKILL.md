@@ -1,6 +1,7 @@
 ---
 name: sdd
 description: "Before modifying/creating SPEC.md files, you must always read this skill."
+user-invocable: false
 ---
 
 # Spec-Driven Development
