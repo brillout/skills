@@ -1,21 +1,21 @@
 ---
-name: sdd
-description: "Before modifying/creating SPEC.md files, you must always read this skill."
+name: logic-driven-development
+description: "Before modifying/creating LOGIC.md files, you must always read this skill."
 user-invocable: false
 ---
 
-# Spec-Driven Development
+# Logic-Driven Development
 
-For each file and directory containing software source code, a `SPEC.md` file describes what the code does.
-- `some-file.ext` => `some-file.SPEC.md`
-- `some-dir/` => `some-dir/SPEC.md`
+For each file and directory containing software source code, a `LOGIC.md` file describes what the code does.
+- `some-file.ext` => `some-file.LOGIC.md`
+- `some-dir/` => `some-dir/LOGIC.md`
 
 
 ## Goal
 
-AI writes the code; the engineer stays in control of the business logic. `SPEC.md` files are where that control happens: reviewing a change means reading `SPEC.md` diff, and understanding any part of the system means reading `SPEC.md` — never the code.
+AI writes the code; the engineer stays in control of the business logic. `LOGIC.md` files are where that control happens: reviewing a change means reading `LOGIC.md` diff, and understanding any part of the system means reading `LOGIC.md` — never the code.
 
-A `SPEC.md` is the answer to "how does this work?" — the business logic, nothing else.
+A `LOGIC.md` is the answer to "how does this work?" — the business logic, nothing else.
 
 Write for exactly one reader: the technical product manager — knows the project and its user stories, proficient in programming and software engineering, never reads the code.
 - Assume zero knowledge about the code. Technical writing is fine; presupposing what the code looks is not.
@@ -24,14 +24,14 @@ Content:
 - 100% coverage of high-level business logic from a bird's view
 - Only explains what the code does — the only additional context is in the `Context` sections
 - Skip source code that don't represent business logic, e.g. `examples/`
-  - Except tests: create a `SPEC.md` only describing what the tests cover (don't explain how the test file work)
+  - Except tests: create a `LOGIC.md` only describing what the tests cover (don't explain how the test file work)
 
 Clear writing:
 - Zero ambiguity: the reader must never second-guess what a sentence means
 - Minimal prior reading: each sentence understandable on its own
 - Established concepts => use their established name, whatever the domain
 - No new jargon. Coin a term only when the concept has no established name, and explain every coinage in `## Glossary`.
-- One concept => one name, used verbatim across all `SPEC.md` files. Never rotate synonyms: the reader assumes different words mean different things.
+- One concept => one name, used verbatim across all `LOGIC.md` files. Never rotate synonyms: the reader assumes different words mean different things.
 
 
 ## File content
@@ -92,12 +92,12 @@ Note:
 ## Hierarchy
 
 The file structure often represents levels of abstraction => mirror it:
-- Root `SPEC.md`:
+- Root `LOGIC.md`:
   - The highest-level answer to "what does this software do?" — the high-level product's story
   - How the top-level subsystems relate (instead of a low-level repository overview)
-- Deeper `SPEC.md` files => each subsystem's story
+- Deeper `LOGIC.md` files => each subsystem's story
 
 
 ## Install
 
-When the user asks to install or set up SDD: generate a `SPEC.md` for each file and directory containing software source code — the entire code base, in one go.
+When the user asks to install or set up LDD: generate a `LOGIC.md` for each file and directory containing software source code — the entire code base, in one go.
