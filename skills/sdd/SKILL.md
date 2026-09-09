@@ -1,6 +1,6 @@
 ---
 name: sdd
-description: "Spec-Driven Development (SDD): every source code file and directory gets a SPEC.md describing its business logic for a technical product manager who never reads the code. Use this skill whenever the user asks to install, set up, or apply SDD, to generate, write, update, or review SPEC.md (or *.SPEC.md) files, or to document or explain the business logic of code. Always use it before creating or modifying any SPEC.md, and whenever code changes in a project that already contains SPEC.md files, even if the user doesn't mention specs: the affected SPEC.md files must be updated in the same change."
+description: "Spec-Driven Development (SDD): every source code file and directory has a SPEC.md describing the business logic it implements, so the engineer reviews SPEC.md diffs instead of code. Use this skill whenever the user asks to install or set up SDD, to generate, write, update, or review SPEC.md files (specs), or to document what the code does. Always use it before creating or modifying any SPEC.md, and before changing code in a project that has SPEC.md files, even if the user does not mention specs (the affected SPEC.md files must be updated in the same change). Not for product specs, API schemas, or *.spec.ts test files."
 ---
 
 # Spec-Driven Development
