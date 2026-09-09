@@ -18,9 +18,7 @@ Install SDD
 > [!NOTE]
 > The `sdd` skill is an [Agent Skill](https://agentskills.io): it works with Claude Code, Cursor, Codex, Copilot, and [many other agents](https://github.com/vercel-labs/skills).
 >
-> Alternatives:
-> - Claude Code plugin: `/plugin marketplace add brillout/sdd` then `/plugin install sdd@brillout`
-> - Agent without skill support: tell AI `Install https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/skills/sdd/SKILL.md`
+> Agent without skill support? Tell AI: `Install https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/skills/sdd/SKILL.md`
 
 
 ## What does it do?
