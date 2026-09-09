@@ -3,45 +3,44 @@
 
 ## Get started
 
-Tell AI:
+Install the `sdd` skill:
+
+```shell
+npx skills add brillout/sdd
+```
+
+Then tell AI:
 
 ```
-Install https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md
+Install SDD
 ```
-
-> [!NOTE]
-> [https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md](https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md) is the raw link of the `ssd.md` file of this repository.
-
 
 ## What does it do?
 
-- AI generates `.spec.md` for each source code file:
+- AI generates a `SPEC.md` for each source code file and directory:
+  - `some-file.ext` => `some-file.SPEC.md`
+  - `some-dir/` => `some-dir/SPEC.md`
   ```md
-  One-sentence description of what this file/directory does.
+  Short description of the business logic this file/directory implements.
 
-  ## TLDR
+  ## Business logic — TL;DR
 
-  - Code does this
-  - And that
-  - ...
+  - **Some business logic** - short description
+  - **Some other business logic** - short description
 
-  ## Problems
+  ## Business logic
 
-  List of non-obvious problems.
+  ### Some business logic
 
-  ## Decisions
+  #### Context
 
-  List of non-obvious decisions.
+  #### Business logic
 
-  ## Facts
+  ### Some other business logic
 
-  List of non-obvious uncommon knowledge.
-
-  ## Flows
-
-  List of all high-level flows.
+  ...
   ```
-- AI will maintain these `.spec.md` files
+- AI maintains these `SPEC.md` files: every code change comes with its `SPEC.md` change
 
 
 ## Why?
@@ -53,7 +52,7 @@ It enables you to:
 
 ## How does it work?
 
-Read the [`sdd.md` file](./sdd.md) — it's small.
+Read [`SKILL.md`](./skills/sdd/SKILL.md) — it's small.
 
 
 ## See also
