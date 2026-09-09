@@ -103,9 +103,7 @@ The file structure often represents levels of abstraction => mirror it:
 
 ## Install
 
-When the user asks to install or set up SDD:
-1. Generate a `SPEC.md` file for each file and directory containing software source code
-2. Make sure `AGENTS.md` contains: "Before modifying/creating SPEC.md files, you must always use the `sdd` skill — https://github.com/brillout/sdd"
+When the user asks to install or set up SDD: generate a `SPEC.md` file for each file and directory containing software source code.
 
 
 ## Maintain
