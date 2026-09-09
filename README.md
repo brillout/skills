@@ -3,45 +3,56 @@
 
 ## Get started
 
-Tell AI:
+Install the `sdd` skill:
+
+```shell
+npx skills add brillout/sdd
+```
+
+Then tell AI:
 
 ```
-Install https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md
+Install SDD
 ```
 
 > [!NOTE]
-> [https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md](https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md) is the raw link of the `ssd.md` file of this repository.
+> The `sdd` skill is an [Agent Skill](https://agentskills.io): it works with Claude Code, Cursor, Codex, Copilot, and [many other agents](https://github.com/vercel-labs/skills).
+>
+> Alternatives:
+> - Claude Code plugin: `/plugin marketplace add brillout/sdd` then `/plugin install sdd@brillout`
+> - Agent without skill support: tell AI `Install https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/skills/sdd/SKILL.md`
 
 
 ## What does it do?
 
-- AI generates `.spec.md` for each source code file:
+- AI generates a `SPEC.md` for each source code file and directory:
+  - `some-file.ext` => `some-file.SPEC.md`
+  - `some-dir/` => `some-dir/SPEC.md`
   ```md
-  One-sentence description of what this file/directory does.
+  Short description of the business logic this file/directory implements.
 
-  ## TLDR
+  ## Context [optional]
 
-  - Code does this
-  - And that
-  - ...
+  ## Glossary [optional]
 
-  ## Problems
+  ## Business logic — TL;DR
 
-  List of non-obvious problems.
+  - **Some business logic** - short description
+  - **Some other business logic** - short description
 
-  ## Decisions
+  ## Business logic
 
-  List of non-obvious decisions.
+  ### Some business logic
 
-  ## Facts
+  #### Context
 
-  List of non-obvious uncommon knowledge.
+  #### Business logic
 
-  ## Flows
+  ### Some other business logic
 
-  List of all high-level flows.
+  ...
   ```
-- AI will maintain these `.spec.md` files
+- AI maintains these `SPEC.md` files: every code change comes with its `SPEC.md` change
 
 
 ## Why?
@@ -53,7 +64,7 @@ It enables you to:
 
 ## How does it work?
 
-Read the [`sdd.md` file](./sdd.md) — it's small.
+Read the [`SKILL.md` file](./skills/sdd/SKILL.md) — it's small.
 
 
 ## See also
