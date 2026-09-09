@@ -5,7 +5,7 @@ For each file and directory containing software source code, a `SPEC.md` file de
 
 ## Goal
 
-AI writes the code; the engineer stays in control of the business logic. `SPEC.md` files are where that control happens: reviewing a change means reading its spec diff, and understanding any part of the system means reading its spec — never the code.
+AI writes the code; the engineer stays in control of the business logic. `SPEC.md` files are where that control happens: reviewing a change means reading `SPEC.md` diff, and understanding any part of the system means reading `SPEC.md` — never the code.
 
 A `SPEC.md` is the answer to "how does this work?" — the business logic, nothing else.
 
@@ -14,7 +14,7 @@ Write for exactly one reader: the technical product manager — knows the projec
 
 Content:
 - 100% coverage of high-level business logic from a bird's view
-- Only explains what the code does
+- Only explains what the code does — the only additional context is in the `Context` sections
 - Skip source code that don't represent business logic, e.g. `examples/`
   - Except tests: create a `SPEC.md` only describing what the tests cover (don't explain how the test file work)
 
@@ -31,17 +31,9 @@ Clear writing:
 ```md
 Short description of the business logic this file/directory implements.
 
-## User stories [optional]
+## Context [optional]
 
-List of user stories that two or more business logic below relate to.
-
-## Business logic stories [optional]
-
-List of business logic flows that two or more business logic below relate to.
-
-## Problems [optional]
-
-List of problems that two or more business logic below relate to.
+Context that two or more business logic below relate to.
 
 ## Glossary [optional]
 
@@ -57,21 +49,13 @@ List of problems that two or more business logic below relate to.
 
 ### Some business logic
 
-#### User story [required]
+#### Context [required]
 
-The user story/stories the business logic relates to (can be a reference to `## User stories`)
-
-#### Business logic story [required]
-
-The business logic story/stories the business logic relates to (can be a reference to `## Business logic stories`)
-
-#### Problem [optional]
-
-The problem(s) the business logic is solving (can be a reference to `## Problems`)
+Context the business logic relates to (can be a reference to `## Context`)
 
 #### Business logic [required]
 
-The business logic and how it relates to the user stories.
+The business logic that the code implements.
 
 ### Some other business logic
 
@@ -85,11 +69,20 @@ You must always read and respect https://raw.githubusercontent.com/brillout/sdd/
 Note:
 - The `[required]`/`[optional]` are labels to denote whether you can omit a section
   - For example, for a small file, a short description can be enough
-- The problem and story sections:
-  - The goal is to provide context, and make it clear to the technical product manager why the business logic exists
-  - The "user" refers to the end user. The user story sections connect the business logic to what happens from the end user's perspective — the perspective the technical product manager is familiar with.
-  - While the business logic might not be directly connected to a user story, you can still consider using a user story section to provide the broader context in which the business logic fits
 - Every time you use jargon, refer to `## Glossary`: `some jargon [x]`
+- The `Context` sections:
+  - Two goals — make it clear to the technical product manager:
+    1. How the business logic fits into the global context
+    2. Why the business logic exists
+  - Consider using these subsections:
+    - `User story`
+       - List of user stories the business logic relates to
+       - The "user" refers to the end user — connect the business logic to what happens from the end user's perspective, which is the perspective the technical product manager is most familiar with
+       - Since the reader is familiar with user stories, this is a great opportunity to bring the reader into the context
+    - `Business logic story`
+       - List of business logic stories the business logic relates to
+    - `Problem`
+       - List of problems the business logic relates to
 
 
 ## Hierarchy
