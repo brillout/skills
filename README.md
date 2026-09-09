@@ -51,6 +51,7 @@ Install SDD
   ...
   ```
 - AI maintains these `SPEC.md` files: every code change comes with its `SPEC.md` change
+- If `SPEC.md` files are missing, AI tells you and doesn't create any until you run `Install SDD` for the entire code base
 
 
 ## Why?
