@@ -1,25 +1,25 @@
-# Spec-Driven Development
+# Logic-Driven Development
 
 
 ## Get started
 
-Install the `sdd` skill:
+Install the `ldd` skill:
 
 ```shell
-npx skills add brillout/skills --skill sdd
+npx skills add brillout/skills --skill ldd
 ```
 
 Then tell AI:
 
 ```
-Install SDD
+Install LDD
 ```
 
 ## What does it do?
 
-- AI generates a `SPEC.md` for each source code file and directory:
-  - `some-file.ext` => `some-file.SPEC.md`
-  - `some-dir/` => `some-dir/SPEC.md`
+- AI generates a `LOGIC.md` for each source code file and directory:
+  - `some-file.ext` => `some-file.LOGIC.md`
+  - `some-dir/` => `some-dir/LOGIC.md`
   ```md
   Short description of the business logic this file/directory implements.
 
@@ -40,7 +40,7 @@ Install SDD
 
   ...
   ```
-- AI maintains these `SPEC.md` files: every code change comes with its `SPEC.md` change
+- AI maintains these `LOGIC.md` files: every code change comes with its `LOGIC.md` change
 
 
 ## Why?
@@ -52,7 +52,7 @@ It enables you to:
 
 ## How does it work?
 
-Read [`SKILL.md`](./skills/sdd/SKILL.md) — it's small.
+Read [`SKILL.md`](./skills/ldd/SKILL.md) — it's small.
 
 
 ## See also
