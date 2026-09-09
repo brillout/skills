@@ -1,6 +1,6 @@
 ---
 name: sdd
-description: "Spec-Driven Development (SDD): every source code file and directory has a SPEC.md describing the business logic it implements, so the engineer reviews SPEC.md diffs instead of code. Use this skill whenever the user asks to install or set up SDD, to generate, write, update, or review SPEC.md files (specs), or to document what the code does. Always use it before creating or modifying any SPEC.md. Also use it at the start of every coding task, before anything else, even if the user does not mention specs: it checks whether the project uses SDD and whether any SPEC.md is missing, and keeps the SPEC.md files in sync with the code. Not for product specs, API schemas, or *.spec.ts test files."
+description: "Before modifying/creating SPEC.md files, you must always read this skill."
 ---
 
 # Spec-Driven Development
@@ -67,10 +67,6 @@ The business logic that the code implements.
 ### Some other business logic
 
 ...
-
-## Before modifying/creating SPEC.md files [required]
-
-You must always use the `sdd` skill — https://github.com/brillout/sdd
 ```
 
 Note:
@@ -104,31 +100,3 @@ The file structure often represents levels of abstraction => mirror it:
 ## Install
 
 When the user asks to install or set up SDD: generate a `SPEC.md` for each file and directory containing software source code — the entire code base, in one go.
-- All at once: `SPEC.md` files written in isolation don't share one vocabulary, and the reader can't trust an incomplete set — a partial install is worse than none
-- List what's missing, e.g. with `git ls-files`, skipping what doesn't represent business logic (see Goal)
-- Root `SPEC.md` first — it sets the vocabulary (one concept => one name) — then the rest, then revisit the root
-- Idempotent: re-running the install only creates the `SPEC.md` files that are still missing
-
-
-## Missing SPEC.md
-
-A project uses SDD when this skill is installed in the project (e.g. `.claude/skills/sdd/`, `.agents/skills/sdd/`) or when a `SPEC.md` exists. In such a project, before any task, check the install state:
-- Not installed: no root `SPEC.md`
-- Incomplete: the root `SPEC.md` exists, but a file or directory containing software source code has no `SPEC.md`
-
-If the project doesn't use SDD: nothing to do (unless the user asks to install).
-
-In both cases above, unless the user asked to install:
-- Don't create any `SPEC.md`: a `SPEC.md` is only ever created by the install, or by Maintain for a file/directory you add
-- Shout: at the start and again at the end of your reply, tell the user what's missing, that the change can't be reviewed through `SPEC.md`, and the next step — `Install SDD`
-- Then do what the user asked; Maintain still applies to the `SPEC.md` files that exist
-
-
-## Maintain
-
-The `SPEC.md` files must always describe the current code: the engineer reviews a change by reading the `SPEC.md` diff, so a code change without its `SPEC.md` change is invisible to the engineer.
-- Every change to source code => update the `SPEC.md` of the changed file/directory, and the parent `SPEC.md` files whose story changed — in the same change, never as a follow-up
-- New file/directory containing business logic => new `SPEC.md`; deleted or moved => delete or move its `SPEC.md`
-- A `SPEC.md` missing for a file/directory you didn't add => don't create it, see Missing SPEC.md
-- Keep the wording consistent with the other `SPEC.md` files (one concept => one name)
-- To understand an unfamiliar part of the system before changing it, read its `SPEC.md` files first — root `SPEC.md`, then deeper
