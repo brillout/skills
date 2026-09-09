@@ -116,7 +116,9 @@ A project uses SDD when this skill is installed in the project (e.g. `.claude/sk
 - Not installed: no root `SPEC.md`
 - Incomplete: the root `SPEC.md` exists, but a file or directory containing software source code has no `SPEC.md`
 
-In both cases, unless the user asked to install:
+If the project doesn't use SDD: nothing to do (unless the user asks to install).
+
+In both cases above, unless the user asked to install:
 - Don't create any `SPEC.md`: a `SPEC.md` is only ever created by the install, or by Maintain for a file/directory you add
 - Shout: at the start and again at the end of your reply, tell the user what's missing, that the change can't be reviewed through `SPEC.md`, and the next step — `Install SDD`
 - Then do what the user asked; Maintain still applies to the `SPEC.md` files that exist
