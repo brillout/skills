@@ -1,5 +1,5 @@
 ---
-name: ldd
+name: logic-driven-development
 description: "Before modifying/creating LOGIC.md files, you must always read this skill."
 user-invocable: false
 ---

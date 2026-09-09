@@ -3,10 +3,10 @@
 
 ## Get started
 
-Install the `ldd` skill:
+Install the `logic-driven-development` skill:
 
 ```shell
-npx skills add brillout/skills --skill ldd
+npx skills add brillout/skills --skill logic-driven-development
 ```
 
 Then tell AI:
@@ -52,7 +52,7 @@ It enables you to:
 
 ## How does it work?
 
-Read [`SKILL.md`](./skills/ldd/SKILL.md) — it's small.
+Read [`SKILL.md`](./skills/logic-driven-development/SKILL.md) — it's small.
 
 
 ## See also
