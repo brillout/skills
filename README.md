@@ -6,7 +6,7 @@
 Install the `sdd` skill:
 
 ```shell
-npx skills add brillout/sdd
+npx skills add brillout/skills --skill sdd
 ```
 
 Then tell AI:
