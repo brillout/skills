@@ -1,3 +1,8 @@
+---
+name: sdd
+description: Spec-driven development — every source code file and directory has a `SPEC.md` file next to it describing the business logic it implements, written for a technical product manager who never reads the code. Use this whenever creating, modifying, reviewing or answering questions about `SPEC.md` files, whenever setting up spec-driven development in a repository, and whenever you change source code in a repository that has `SPEC.md` files, since the `SPEC.md` files must be updated together with the code.
+---
+
 For each file and directory containing software source code, a `SPEC.md` file describes what the code does.
 - `some-file.ext` => `some-file.SPEC.md`
 - `some-dir/` => `some-dir/SPEC.md`
@@ -63,7 +68,7 @@ The business logic that the code implements.
 
 ## Before modifying/creating SPEC.md files [required]
 
-You must always read and respect https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md
+You must always read and respect the `sdd` skill — or, if it isn't installed, https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md
 ```
 
 Note:
@@ -96,5 +101,12 @@ The file structure often represents levels of abstraction => mirror it:
 
 ## Install
 
-1. Generate a `SPEC.md` file for each file and directory containing software source code
-2. Make sure `AGENTS.md` contains: "Before modifying/creating SPEC.md files, you must always read and respect https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md"
+1. Install this file as a skill:
+   ```bash
+   mkdir -p .claude/skills/sdd
+   curl -sL https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md -o .claude/skills/sdd/SKILL.md
+   ```
+   - Replace `.claude/skills/` with `~/.claude/skills/` to install it for all your repositories
+   - Skip this step for an AI that doesn't support skills: the `AGENTS.md` line of step 3 is enough
+2. Generate a `SPEC.md` file for each file and directory containing software source code
+3. Make sure `AGENTS.md` contains: "Before modifying/creating SPEC.md files, you must always read and respect the `sdd` skill — or, if it isn't installed, https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md"

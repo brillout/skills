@@ -3,14 +3,27 @@
 
 ## Get started
 
-Tell AI:
+Install the skill:
+
+```bash
+mkdir -p .claude/skills/sdd
+curl -sL https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md -o .claude/skills/sdd/SKILL.md
+```
+
+Then tell AI:
+
+```
+Set up spec-driven development
+```
+
+> [!NOTE]
+> [https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md](https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md) is the raw link of the `sdd.md` file of this repository — it's a skill file, so installing SDD is just downloading it to `.claude/skills/sdd/SKILL.md`. Use `~/.claude/skills/sdd/SKILL.md` instead to install it for all your repositories.
+
+For an AI that doesn't support skills, tell AI:
 
 ```
 Install https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md
 ```
-
-> [!NOTE]
-> [https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md](https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md) is the raw link of the `ssd.md` file of this repository.
 
 
 ## What does it do?
