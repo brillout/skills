@@ -98,6 +98,11 @@ The file structure often represents levels of abstraction => mirror it:
 - Deeper `LOGIC.md` files => each subsystem's story
 
 
+## After a change
+
+When a change renames or removes something, search every `LOGIC.md` for its name and update each one that mentions it, not only the ones next to the changed code.
+
+
 ## Install
 
 When the user asks to install or set up LDD: generate a `LOGIC.md` for each file and directory containing software source code — the entire code base, in one go.
