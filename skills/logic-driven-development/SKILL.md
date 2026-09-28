@@ -106,3 +106,8 @@ Always consider whether other `LOGIC.md` files must be updated as well, not only
 ## Install
 
 When the user asks to install or set up LDD: generate a `LOGIC.md` for each file and directory containing software source code — the entire code base, in one go.
+
+
+## Reset
+
+When the user asks to reset LDD, remove all `LOGIC.md` files and recreate them as described in Install. Don't read the previous files; resetting starts with a brand-new suite of `LOGIC.md` files.
