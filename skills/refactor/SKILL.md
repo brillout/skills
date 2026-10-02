@@ -1,11 +1,12 @@
 ---
-name: refactor-pr
-description: "Refactor a PR until it's exceptionally good: rate every file, function and logic, improve the architectural split, simplify. Use when the user asks to refactor a PR."
+name: refactor
+description: "Refactor a PR, a branch, a directory or a file until it's exceptionally good: rate every file, function and logic, improve the architectural split, simplify. Use when the user asks to refactor code."
 ---
 
-# Refactor PR
+# Refactor
 
-Refactor this PR:
+Refactor the code the user is referring to — for example a PR, a branch, a directory, or a file. If it isn't clear what should be refactored, ask the user.
+
 - Pinnacle architectural split
   - Does each file and each function represent a sensible abstraction that is easy to understand?
   - Rate the *seams*, not just the boxes: for each call site, ask whether the responsibility sits on the right side of the boundary — should a caller's wrapper move down into the callee (or vice versa)? A function can be clean, DRY and well-tested in isolation yet still be in the wrong place. "Well-factored" is not "well-located".
@@ -26,4 +27,4 @@ Refactor this PR:
 - Separate commit for each refactor
 - Work until it's exceptionally good. We as an expert team will check against every little detail.
   - If we see that you gave mostly a 10/10 rating, that's a sign you've been lazy... so make sure you scrutinize everything and spend a substantial amount of time. We don't want to prompt you again and again to achieve quality — autonomously strive for quality on your own without us pushing you.
-- Give summary of what you worked on in the PR opening comment: print the lists again with old rating => new rating with link to commit(s)
+- Give summary of what you worked on in the PR opening comment (or in this chat, if there's no PR): print the lists again with old rating => new rating with link to commit(s)

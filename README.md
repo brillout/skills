@@ -56,21 +56,21 @@ Read [`SKILL.md`](./skills/logic-driven-development/SKILL.md) — it's small.
 
 ## Other skills
 
-### Refactor PR
+### Refactor
 
-AI rates every file, function and logic of a PR, then refactors until it's exceptionally good — one commit per refactor, with old rating => new rating in the PR description.
+AI rates every file, function and logic of the code you point it at (a PR, a branch, a directory, ...), then refactors until it's exceptionally good — one commit per refactor, with a summary of old rating => new rating.
 
 ```shell
-npx skills add brillout/skills --skill refactor-pr
+npx skills add brillout/skills --skill refactor
 ```
 
-Then tell AI:
+Then tell AI what to refactor, for example:
 
 ```
 Refactor this PR
 ```
 
-Read [`SKILL.md`](./skills/refactor-pr/SKILL.md) — it's small.
+Read [`SKILL.md`](./skills/refactor/SKILL.md) — it's small.
 
 
 ## See also
