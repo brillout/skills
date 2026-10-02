@@ -54,6 +54,25 @@ Install LDD
 Read [`SKILL.md`](./skills/logic-driven-development/SKILL.md) — it's small.
 
 
+## Other skills
+
+### Refactor PR
+
+AI rates every file, function and logic of a PR, then refactors until it's exceptionally good — one commit per refactor, with old rating => new rating in the PR description.
+
+```shell
+npx skills add brillout/skills --skill refactor-pr
+```
+
+Then tell AI:
+
+```
+Refactor this PR
+```
+
+Read [`SKILL.md`](./skills/refactor-pr/SKILL.md) — it's small.
+
+
 ## See also
 
 - [@brillout/ai-memory](https://github.com/brillout/ai-memory) — AI memory via MEMORY.md
