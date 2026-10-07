@@ -1,7 +1,24 @@
 # Skills
 
-- [Logic-Driven Development](#logic-driven-development)
 - [Refactor](#refactor)
+- [Logic-Driven Development](#logic-driven-development)
+
+
+## Refactor
+
+AI rates every file, function and logic of the code you point it at (a PR, a branch, a directory, ...), then refactors until it's exceptionally good — one commit per refactor, with a summary of old rating => new rating.
+
+```shell
+npx skills add brillout/skills --skill refactor
+```
+
+Then tell AI what to refactor, for example:
+
+```
+Refactor this PR
+```
+
+Read [`SKILL.md`](./skills/refactor/SKILL.md) — it's small.
 
 
 ## Logic-Driven Development
@@ -56,20 +73,3 @@ Install LDD
 ### How does it work?
 
 Read [`SKILL.md`](./skills/logic-driven-development/SKILL.md) — it's small.
-
-
-## Refactor
-
-AI rates every file, function and logic of the code you point it at (a PR, a branch, a directory, ...), then refactors until it's exceptionally good — one commit per refactor, with a summary of old rating => new rating.
-
-```shell
-npx skills add brillout/skills --skill refactor
-```
-
-Then tell AI what to refactor, for example:
-
-```
-Refactor this PR
-```
-
-Read [`SKILL.md`](./skills/refactor/SKILL.md) — it's small.
