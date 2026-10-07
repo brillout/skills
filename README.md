@@ -1,12 +1,20 @@
 # Skills
 
-- [Refactor](#refactor)
-- [Logic-Driven Development](#logic-driven-development)
+- [Refactor](#refactor) — AI rates and refactors your code until it's exceptionally good
+- [Logic-Driven Development](#logic-driven-development) — AI maintains a `LOGIC.md` documenting the business logic of each file and directory
 
 
 ## Refactor
 
+- [What is it?](#what-is-it) — AI rates and refactors your code, one commit per refactor
+- [Get started](#get-started) — install the skill and tell AI what to refactor
+- [How does it work?](#how-does-it-work) — read the (small) `SKILL.md`
+
+### What is it?
+
 AI rates every file, function and logic of the code you point it at (a PR, a branch, a directory, ...), then refactors until it's exceptionally good — one commit per refactor, with a summary of old rating => new rating.
+
+### Get started
 
 ```shell
 npx skills add brillout/skills --skill refactor
@@ -24,6 +32,10 @@ Read [`SKILL.md`](./skills/refactor/SKILL.md) — it's small.
 
 
 ## Logic-Driven Development
+
+- [What is it?](#what-is-it-1) — a `LOGIC.md` for each source file and directory
+- [Get started](#get-started-1) — install the skill and tell AI to install LDD
+- [How does it work?](#how-does-it-work-1) — read the (small) `SKILL.md`
 
 ### What is it?
 
