@@ -1,6 +1,7 @@
 ---
 name: refactor
 description: "Refactor a PR, a branch, a directory or a file until it's exceptionally good: rate every file, function and logic, improve the architectural split, simplify. Use when the user asks to refactor code."
+argument-hint: "[PR | branch | directory | file]"
 ---
 
 # Refactor
