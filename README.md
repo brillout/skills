@@ -6,9 +6,9 @@
 
 ## Refactor
 
-- [What is it?](#what-is-it) — AI rates and refactors your code, one commit per refactor
-- [Get started](#get-started) — install the skill and tell AI what to refactor
-- [How does it work?](#how-does-it-work) — read the (small) `SKILL.md`
+- [What is it?](#what-is-it)
+- [Get started](#get-started)
+- [How does it work?](#how-does-it-work)
 
 ### What is it?
 
@@ -33,9 +33,9 @@ Read [`SKILL.md`](./skills/refactor/SKILL.md) — it's small.
 
 ## Logic-Driven Development
 
-- [What is it?](#what-is-it-1) — a `LOGIC.md` for each source file and directory
-- [Get started](#get-started-1) — install the skill and tell AI to install LDD
-- [How does it work?](#how-does-it-work-1) — read the (small) `SKILL.md`
+- [What is it?](#what-is-it-1)
+- [Get started](#get-started-1)
+- [How does it work?](#how-does-it-work-1)
 
 ### What is it?
 
