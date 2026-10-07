@@ -1,6 +1,12 @@
-# Logic-Driven Development (LDD)
+# Skills
 
-## What is LDD?
+- [Logic-Driven Development](#logic-driven-development)
+- [Refactor](#refactor)
+
+
+## Logic-Driven Development
+
+### What is LDD (Logic-Driven Development)?
 
 AI generates and maintains a `LOGIC.md` for each source code file and directory:
 - `some-file.ext` => `some-file.LOGIC.md`
@@ -33,8 +39,7 @@ It enables you to:
 - When AI makes a change, quickly read the modified business logic instead of reading code
 - Quickly navigate unfamiliar code
 
-
-## Get started
+### Get started
 
 Install the `logic-driven-development` skill:
 
@@ -48,15 +53,12 @@ Then tell AI:
 Install LDD
 ```
 
-
-## How does it work?
+### How does it work?
 
 Read [`SKILL.md`](./skills/logic-driven-development/SKILL.md) — it's small.
 
 
-## Other skills
-
-### Refactor
+## Refactor
 
 AI rates every file, function and logic of the code you point it at (a PR, a branch, a directory, ...), then refactors until it's exceptionally good — one commit per refactor, with a summary of old rating => new rating.
 
@@ -71,9 +73,3 @@ Refactor this PR
 ```
 
 Read [`SKILL.md`](./skills/refactor/SKILL.md) — it's small.
-
-
-## See also
-
-- [@brillout/ai-memory](https://github.com/brillout/ai-memory) — AI memory via MEMORY.md
-- [The Framework](https://the-framework.ai/) — Autonomous AI. Make the important decisions, let AI do the rest.
