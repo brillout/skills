@@ -1,7 +1,7 @@
 # Skills
 
-- [Refactor](#refactor) — AI rates and refactors your code until it's exceptionally good
-- [Logic-Driven Development](#logic-driven-development) — AI maintains a `LOGIC.md` documenting the business logic of each file and directory
+- [Refactor](#refactor) — AI refactors (its) code until it's exceptionally good
+- [Logic-Driven Development](#logic-driven-development) — AI maintains `LOGIC.md` files documenting the business logic of each file and directory
 
 
 ## Refactor
