@@ -1,12 +1,12 @@
 ---
 name: refactor
 description: "Refactor a PR, a branch, a directory or a file until it's exceptionally good: rate every file, function and logic, improve the architectural split, simplify. Use when the user asks to refactor code."
-argument-hint: "[PR | branch | directory | file]"
+argument-hint: "What do you want to refactor? By default, what the agent currently works on — you can specify a different scope instead (e.g. file or directory)"
 ---
 
 # Refactor
 
-Refactor the code the user is referring to — for example a PR, a branch, a directory, or a file. If it isn't clear what should be refactored, ask the user.
+Refactor what the user specifies (e.g. a PR, a branch, a directory, or a file). By default, refactor what you're currently working on. If it isn't clear what should be refactored, ask the user.
 
 - Pinnacle architectural split
   - Does each file and each function represent a sensible abstraction that is easy to understand?
