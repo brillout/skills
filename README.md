@@ -18,12 +18,14 @@ Then tell AI what to refactor, for example:
 Refactor this PR
 ```
 
+### How does it work?
+
 Read [`SKILL.md`](./skills/refactor/SKILL.md) — it's small.
 
 
 ## Logic-Driven Development
 
-### What is LDD (Logic-Driven Development)?
+### What is it?
 
 AI generates and maintains a `LOGIC.md` for each source code file and directory:
 - `some-file.ext` => `some-file.LOGIC.md`
