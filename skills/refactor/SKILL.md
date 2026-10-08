@@ -11,7 +11,7 @@ Refactor what the user specifies (e.g. a PR, a branch, a directory, or a file). 
 - Pinnacle architectural split
   - Does each file and each function represent a sensible abstraction that is easy to understand?
   - Rate the *seams*, not just the boxes: for each call site, ask whether the responsibility sits on the right side of the boundary — should a caller's wrapper move down into the callee (or vice versa)? A function can be clean, DRY and well-tested in isolation yet still be in the wrong place. "Well-factored" is not "well-located".
-  - Before starting to work: list *ALL* files and *ALL* functions in this chat, rate them all (0: convoluted abstraction, hard to understand, not DRY — 10: perfect), and give a reason for your rating.
+  - Before starting to work: list *ALL* files and *ALL* functions, rate them all (0: convoluted abstraction, hard to understand, not DRY — 10: perfect), and give a reason for your rating.
     - DON'T skip any file nor any function in your rating list — write an extra separated list of all files and all functions and put a ✅ tick to each entry to double check whether you forgot to rate something. So two lists: one list of ratings & explanation, and a second ✅ list.
 - Simplify
   - Review *all* logic
@@ -28,4 +28,4 @@ Refactor what the user specifies (e.g. a PR, a branch, a directory, or a file). 
 - Separate commit for each refactor
 - Work until it's exceptionally good. We as an expert team will check against every little detail.
   - If we see that you gave mostly a 10/10 rating, that's a sign you've been lazy... so make sure you scrutinize everything and spend a substantial amount of time. We don't want to prompt you again and again to achieve quality — autonomously strive for quality on your own without us pushing you.
-- Give summary of what you worked on in the PR opening comment (or in this chat, if there's no PR): print the lists again with old rating => new rating with link to commit(s)
+- Give summary of what you worked: show the lists to the users with old rating => new rating with link to commit(s)
