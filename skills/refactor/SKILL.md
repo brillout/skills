@@ -26,14 +26,14 @@ Refactor what the user told you (e.g. PR, function, or file). By default, refact
 
 ## Readability
 
-- Put yourself in the shoes of a human reader who reads everything in a linear fashion.
+- Put yourself in the shoes of a human reader who reads everything in a linear fashion
 - Altitude pass: for each entry-point / orchestration function, read it top-to-bottom as prose. Flag any line that drops the reader into lower-level mechanism (a flag, a thunk, a log verb, error plumbing) in the middle of what should be a high-level narrative. For each, ask: can that mechanism move down into the callee so the caller reads at one consistent altitude? Prioritize the reading path of the functions a reader hits first.
 
 ## Workflow
 
-- Before starting to work: list everything (e.g. all logic, files, functions) and rate them all (0: bad — 10: perfect), and give a reason for your rating.
-  - Don't skip anything from your rating list (100% coverage)
-- Show summary of what you worked:
+- Before starting to work: list everything (e.g. all logic, files, functions), rate it all (0: bad — 10: perfect) and give a reason for your rating
+  - Don't skip anything (100% coverage)
+- Show summary of what you did:
   - Show lists with old rating => new rating with link to commits
   - Show entire diff (all commits), e.g. as a GitHub URL or if no URL then a git command
 - Separate commit for each refactor
