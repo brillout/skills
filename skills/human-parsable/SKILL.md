@@ -12,7 +12,7 @@ description: >-
 
 Make large amounts of information human-parsable: the human gets the gist in seconds and finds any detail without reading everything.
 
-That's the only rule. Everything below is a toolbox of examples — use what helps, skip what doesn't, be creative.
+That's the only rule. Everything below is a toolbox of examples — use what helps, skip what doesn't, be creative (don't limit yourself to the examples below).
 
 Small amount of information => just answer, structure is overhead.
 
