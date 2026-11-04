@@ -9,15 +9,15 @@ description: >-
 argument-hint: "What should be made human-parsable? Default: the agent's last message."
 ---
 
-# Human-Parsable
-
-## Goal
+# Goal
 
 Make large amounts of information human-parsable: the human gets the gist in seconds and finds any detail without reading everything.
 
 That's the only rule. Everything below is a toolbox of examples — use what helps, skip what doesn't, be creative.
 
 Small amount of information => just answer, structure is overhead.
+
+# Examples
 
 - TL;DR — as bullet points, everything important at a glance
 - Sections — one `## Subsection` per TL;DR bullet, same name and same order (skip it if the bullet says it all)
