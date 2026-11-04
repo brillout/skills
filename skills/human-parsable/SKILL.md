@@ -21,15 +21,15 @@ Small amount of information => just answer, structure is overhead.
 
 - TL;DR — as bullet points, everything important at a glance
 - Sections — one `## Subsection` per TL;DR bullet, same name and same order (skip it if the bullet says it all)
-- Burry details, e.g. in collapsible, GitHub gist, file, ...
+- Bury details, e.g. in collapsibles, GitHub gist, file, ...
 - Decisions
   - List and enumerate decisions => the human sees all decisions at a glance
   - Highlight the choices and your recommendation
-  - Make choosing easy, e.g. numbers for decisions and letters for choices => human can reply `1B`
+  - Make choosing easy, e.g. numbers for decisions and letters for choices => the human can reply `1B`
 - Highlight
   - What the human must know
-  - Results, not the journey — order by importance to human, not by order you did things
+  - Results, not the journey — order by importance to the human, not by the order you did things
 - Bold lead words => the eye scans the left edge
 - Tables to compare items across the same attributes
 - Before => after, e.g. `timeout: 5s => 30s`
-- Show don't tell, e.g. a 3-line snippet might beat a paragraph
+- Show, don't tell, e.g. a 3-line snippet might beat a paragraph
