@@ -2,6 +2,7 @@
 
 - [Refactor](#refactor) — AI refactors (its) code until it's exceptionally good
 - [Logic-Driven Development](#logic-driven-development) — AI maintains `LOGIC.md` files documenting the business logic of each file and directory
+- [Human-Parsable](#human-parsable) — AI communicates large amounts of information in a way you can quickly parse
 
 
 ## Refactor
@@ -87,3 +88,33 @@ Install LDD
 ### How does it work?
 
 Read [`SKILL.md`](./skills/logic-driven-development/SKILL.md) — it's small.
+
+
+## Human-Parsable
+
+- [What is it?](#what-is-it-2)
+- [Get started](#get-started-2)
+- [How does it work?](#how-does-it-work-2)
+
+### What is it?
+
+When AI communicates a large amount of information (e.g. a summary of its work, a report, a plan, a PR description), it makes it quick for you to parse, for example:
+- TL;DR first, with a section for each TL;DR bullet point
+- Details in collapsibles (or a GitHub gist)
+- Decisions enumerated at a glance, with the choices and AI's recommendation highlighted
+
+### Get started
+
+```shell
+npx skills add brillout/skills --skill human-parsable
+```
+
+AI then applies it whenever it communicates a large amount of information. You can also tell AI, for example:
+
+```
+Make your last message human-parsable
+```
+
+### How does it work?
+
+Read [`SKILL.md`](./skills/human-parsable/SKILL.md) — it's small.
