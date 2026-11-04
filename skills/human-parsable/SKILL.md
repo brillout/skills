@@ -1,6 +1,6 @@
 ---
 name: human-parsable
-description: "Before writing a final summary of your work, a report, a plan, a review, a PR description, or any other message with a large amount of information, you must always read this skill. For a task that will end with such a message, read it when you start the task."
+description: "Efficiently communicating a large amount of information. For example: a final summary of your work, a report, a plan, a review, a PR description. Before writing such a message, you must always read this skill. For a task that will end with such a message, read it when you start the task."
 argument-hint: "What should be made human-parsable? Default: the agent's last message."
 ---
 
