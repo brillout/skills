@@ -2,6 +2,7 @@
 name: human-parsable
 description: >-
   Efficiently communicating large amounts of information to humans.
+
   For example: a final summary of your work, a report, a plan, a review, a PR description.
   Before writing such a message, you must always read this skill.
   For a task that will end with such a message, read it when you start the task.
