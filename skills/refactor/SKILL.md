@@ -11,8 +11,10 @@ Refactor what the user told you (e.g. PR, function, or file). By default, refact
 ## Simplify
 
 - Do you see logic implemented twice? Is everything DRY?
+  - One place per rule: name each independent rule (e.g. a list of the values that need HMR), even when its members already appear elsewhere
 - Can logic be simplified?
 - Question & first-principle thinking: break everything down to ground truth — any previous assumptions might be false
+  - Compare alternatives against the required behavior, not against what the current code happens to do
 - Don't rubber-stamp what's already there
   - Code comments that justify a design ("X lives here rather than Y so that…") are claims to audit, not constraints to respect. For each, construct the alternative it argues against and compare — don't assume the documented choice is optimal.
 - Can boilerplate be removed? Do you see frivolous indirections?
@@ -31,7 +33,8 @@ Refactor what the user told you (e.g. PR, function, or file). By default, refact
 
 ## Workflow
 
-- Before starting to work: list everything (e.g. all logic, files, functions), rate it all (0: bad — 10: perfect) and give a reason for your rating
+- Before starting to work: list the goals and the foundational truths, without code names. Question each truth: what breaks if it's false? A truth where nothing breaks is an assumption to drop. Map each goal to the one place in the code that owns it.
+- Then list everything (e.g. all logic, files, functions), rate it all (0: bad — 10: perfect) and give a reason for your rating
   - Don't skip anything (100% coverage)
 - Show summary of what you did:
   - Show lists with old rating => new rating with link to commits
