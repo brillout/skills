@@ -13,8 +13,9 @@ Refactor what the user told you (e.g. PR, function, or file). By default, refact
 - Do you see logic implemented twice? Is everything DRY?
 - Can logic be simplified?
 - Question & first-principle thinking: break everything down to ground truth — any previous assumptions might be false
+  - Compare alternatives against the required behavior, not against what the current code happens to do
 - Don't rubber-stamp what's already there
-  - Code comments that justify a design ("X lives here rather than Y so that…") are claims to audit, not constraints to respect. For each, construct the alternative it argues against and compare — don't assume the documented choice is optimal.
+  - Code comments that justify a design ("X lives here rather than Y so that…") are claims to audit, not constraints to respect. For each, construct alternatives and compare.
 - Can boilerplate be removed? Do you see frivolous indirections?
 - Can frivolous tests be removed? Tests should verify behavior that isn't obvious from reading the code, not just reproduce its logic.
 
@@ -31,11 +32,16 @@ Refactor what the user told you (e.g. PR, function, or file). By default, refact
 
 ## Workflow
 
-- Before starting to work: list everything (e.g. all logic, files, functions), rate it all (0: bad — 10: perfect) and give a reason for your rating
-  - Don't skip anything (100% coverage)
+- Before starting to work:
+  1. List the goals
+  2. List the current foundational truths — then question, scrutinize, and double-check each
+  3. List everything about the code (business logic, abstractions, files, classes & functions): rate each item (0: bad — 10: perfect) with a reason for the rating
 - Show summary of what you did:
+  - Show the list of foundational truths (the ones before the refactor, as well as new ones after the refactor) — explain each
   - Show lists with old rating => new rating with link to commits
+  - Show and explain all alternatives you considered but dismissed
   - Show entire diff (all commits), e.g. as a GitHub URL or if no URL then a git command
+  - Loudly (e.g. `## Behavior changes: YES/NO`) state whether code is equivalent — list which commits changed what behavior
 - Separate commit for each refactor
-- Work until it's exceptionally good — autonomously strive for quality
+- Work until it's exceptionally good
 - If you stumble upon refactor opportunities beyond the current scope then list them, e.g. `## Beyond this PR`
