@@ -37,7 +37,7 @@ Refactor what the user told you (e.g. PR, function, or file). By default, refact
   2. List the current foundational truths — then question, scrutinize, and double-check each
   3. List everything about the code (business logic, abstractions, files, classes & functions): rate each item (0: bad — 10: perfect) with a reason for the rating
 - Show summary of what you did:
-  - Show the list of foundational truths (the ones before the refactor, as well as the new ones after the refactor) — explain each
+  - Show the list of foundational truths (the ones before the refactor, as well as new ones after the refactor) — explain each
   - Show lists with old rating => new rating with link to commits
   - Show and explain all alternatives you considered but dismissed
   - Show entire diff (all commits), e.g. as a GitHub URL or if no URL then a git command
