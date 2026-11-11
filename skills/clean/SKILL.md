@@ -1,5 +1,5 @@
 ---
-name: cleanup
+name: clean
 description: Walk through all user-facing flows, finding and fixing bugs, inconsistencies, UX paper cuts, and UI imperfections.
 argument-hint: "[setup] [scope: logic|UX|UI|...]"
 ---
