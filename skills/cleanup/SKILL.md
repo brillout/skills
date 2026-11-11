@@ -14,10 +14,11 @@ Strive for a highly polished premium result.
 ## Workflow
 
 Preliminary work:
-- Analyze the test setup
-  - Goal of test setup: efficiently test and track issues
-  - Loudly (e.g. `## Setup quality: 10/10 ✨` / `0/10 🙁`) communicate the test setup to user
-  - If not good: communicate (e.g. `### Setup ideas`) suggestions
+- Analyze test setup
+  - Goal: efficiently find issues
+  - Loudly (e.g. `## Setup quality: 10/10 ✨` / `0/10 😨`) communicate quality to user
+  - Communicate (e.g. `### Setup ideas`) suggestions (if any)
+  - If bad: ask e.g. "Proceed despite bad setup?"
 - Enumerate *all* user-facing flows
 
 Work:
