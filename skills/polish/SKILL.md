@@ -22,14 +22,14 @@ Preliminary work:
 
 Work:
 - Thoroughly walk through all user-facing flows, one flow at a time
-  - Don't skip anything. Every single flow and any single detail matters.
+  - Don't skip anything. Every flow and detail matters.
 - Multiple metrics, for example:
   - Inconsistencies? Does everything make sense (from user POV)?
   - Easy for the user to use?
   - UX paper cuts?
   - Bugs?
   - UI imperfections?
-  - Paper cuts for humans? (Navigate like a human, e.g. move mouse and click around.)
+  - Human paper cuts? (Navigate like a human, e.g. move mouse and click around.)
   - ... (add any applicable metrics)
 
 Communication:
@@ -41,8 +41,8 @@ Communication:
     - For UI changes: before/after screenshots/screencasts
 - Show overview
   - E.g. `## Overview` with bullet points
-  - Loudly (e.g. `### **Changed flows**`) state major changes
   - E.g. `### **Questions**` with your recommendation for each open question
+  - Loudly (e.g. `### **Changed flows**`) state major changes
   - Emphasise everything that needs attention
 
 
