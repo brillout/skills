@@ -29,6 +29,7 @@ Work:
   - UX paper cuts?
   - Bugs?
   - UI imperfections?
+  - Navigate like a human (move mouse, click around) => paper cuts?
   - ...
 
 Communication:
