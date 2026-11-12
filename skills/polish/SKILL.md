@@ -38,7 +38,7 @@ Communication:
     - Either `❓` if not tested, `✅` if no issues found, or `🧹 <number>` with list of changes and explanation
     - Show rating (0: bad — 10: perfect) with reasons why rating isn't `10`
     - Two ratings: before/after
-    - For UI changes: before/after screenshots/screencasts
+    - For UI changes: before/after screenshots/screencasts + diff heatmap
 - Show overview
   - E.g. `## Overview` with bullet points
   - E.g. `### **Questions**` with your recommendation for each open question
