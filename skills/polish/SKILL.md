@@ -23,20 +23,20 @@ Preliminary work:
 Work:
 - Thoroughly walk through all user-facing flows, one flow at a time
   - Don't skip anything. Every single flow and any single detail matters.
-- Multiple checks (for each flow consider making one thorough pass per check)
+- Multiple metrics (for each flow consider making one thorough pass per metric)
   - Inconsistencies? Does everything make sense (from user POV)?
   - Easy for the user to use?
   - UX paper cuts?
   - Bugs?
   - UI imperfections?
   - Navigate like a human (move mouse, click around) => paper cuts?
-  - ...
+  - ... (consider more)
 
 Communication:
 - Show comprehensive list
-  - List and enumerate all user-facing flows, for each flow:
-    - Either `❓` if not tested, `✅` if no issues found, or `🧹 <number-of-changes>` with list of changes and explanation
-    - Show a rating for each flow (0: bad — 10: perfect) with a reason for the rating
+  - List and enumerate all user-facing flows and, for each flow, list all metrics with:
+    - Either `❓` if not tested, `✅` if no issues found, or `🧹 <number>` with list of changes and explanation
+    - Show rating (0: bad — 10: perfect) with reasons why rating isn't `10`
     - Two ratings: before/after
     - For UI changes: before/after screenshots/screencasts
 - Show overview
