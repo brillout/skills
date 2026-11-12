@@ -23,14 +23,14 @@ Preliminary work:
 Work:
 - Thoroughly walk through all user-facing flows, one flow at a time
   - Don't skip anything. Every single flow and any single detail matters.
-- Multiple metrics (for each flow consider making one thorough pass per metric)
+- Multiple metrics, for example:
   - Inconsistencies? Does everything make sense (from user POV)?
   - Easy for the user to use?
   - UX paper cuts?
   - Bugs?
   - UI imperfections?
-  - Navigate like a human (move mouse, click around) => paper cuts?
-  - ... (consider more)
+  - Paper cuts for humans? (Navigate like a human, e.g. move mouse and click around.)
+  - ... (add any applicable metrics)
 
 Communication:
 - Show comprehensive list
