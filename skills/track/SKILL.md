@@ -1,7 +1,7 @@
 ---
 name: watch
 description: Watch a project's public maintainer activity, and post a weekly summary (e.g. GitHub Discussion)
-argument-hint: <project> | weekly <thread-url> | update-skill <thread-url>
+argument-hint: add-project <project> <forum-link> | weekly <thread-url> | update-skill <thread-url>
 disable-model-invocation: true
 ---
 
@@ -12,8 +12,8 @@ AI watches for project activity and posts a weekly summary.
 
 ## Workflow
 
-Once:
-- Create new thread (e.g. GitHub Discussion)
+Add project:
+- Create new thread at `<forum-link>` (e.g. GitHub Discussion)
   - Opening comment example:
     ```md
     # Watch [project-name]
@@ -70,6 +70,6 @@ If not met, fail loudly (e.g. `**ERROR**: aborted because ...`).
 ## Arguments
 
 `$ARGUMENTS` is either:
-- `<project>` => run `Once:`
+- `add-project <project> <forum-link>` => run `Add project:`
 - `weekly <thread-url>` => run `Weekly:` only
 - `update-skill <thread-url>` => run `Update skill:` only
